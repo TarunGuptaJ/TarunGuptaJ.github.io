@@ -45,6 +45,17 @@ const observer = new IntersectionObserver(
 
 document.querySelectorAll('[data-animate]').forEach((el) => observer.observe(el));
 
+// ========== Active nav / subnav state ==========
+const currentPage = document.body.dataset.page;
+
+if (currentPage) {
+  document.querySelectorAll('.nav-link, .subnav-pill').forEach((link) => {
+    if (link.dataset.page === currentPage) {
+      link.classList.add('active');
+    }
+  });
+}
+
 // ========== Footer year ==========
 document.getElementById('year').textContent = new Date().getFullYear();
 

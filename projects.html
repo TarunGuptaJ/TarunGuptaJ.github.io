@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tarun Gupta — Portfolio</title>
-<meta name="description" content="Portfolio of Tarun Gupta — software engineer.">
+<title>Projects — Tarun Gupta</title>
+<meta name="description" content="Projects built by Tarun Gupta — software engineer.">
 <meta name="theme-color" content="#09090b">
 <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body data-page="home">
+<body data-page="projects">
 
 <!-- ========== Nav ========== -->
 <nav class="nav" id="nav">
@@ -34,128 +34,18 @@
 </nav>
 
 
-<!-- ========== Hero ========== -->
-<header class="hero">
-  <div class="hero-glow"></div>
-  <div class="container hero-grid">
-    <div class="hero-content" data-animate>
-      <span class="hero-badge">Open to opportunities</span>
-      <h1>Hi, I'm Tarun Gupta.<br><span>I build things with code.</span></h1>
-      <p class="hero-sub">
-        Software engineer focused on [your specialty — e.g. backend systems, ML, full-stack].
-        Replace this with a couple of sentences about who you are and what you're working on.
-      </p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="/resume.pdf" class="btn btn-secondary">Download Resume</a>
-      </div>
-    </div>
-    <div class="hero-terminal" data-animate>
-      <div class="terminal">
-        <div class="terminal-header">
-          <div class="terminal-dots">
-            <span class="dot dot-red"></span>
-            <span class="dot dot-yellow"></span>
-            <span class="dot dot-green"></span>
-          </div>
-          <span class="terminal-title">whoami.sh</span>
-        </div>
-        <div class="terminal-body" id="terminalBody"></div>
-      </div>
-    </div>
+<!-- ========== Page header ========== -->
+<header class="page-hero">
+  <div class="container">
+    <span class="section-eyebrow">$ ls ~/projects</span>
+    <h1 data-animate>Projects</h1>
+    <p data-animate>Things I've built, for fun or for keeps.</p>
   </div>
 </header>
 
-<!-- ========== Education ========== -->
-<section id="education">
+<!-- ========== Projects ========== -->
+<section id="projects-full">
   <div class="container">
-    <span class="section-eyebrow">$ cat education.log</span>
-    <h2 class="section-title" data-animate>Education</h2>
-    <p class="section-sub" data-animate>Where the fundamentals came from.</p>
-
-    <div class="timeline">
-
-      <div class="timeline-item" data-animate>
-        <div class="timeline-marker">🎓</div>
-        <div class="timeline-content">
-          <div class="timeline-top">
-            <h3>B.Tech / B.E. in [Your Major]</h3>
-            <span class="timeline-date">20XX — 20XX</span>
-          </div>
-          <div class="timeline-org">[University Name]</div>
-          <p>Brief note — relevant coursework, GPA, honors, or focus area.</p>
-          <div class="tag-row">
-            <span class="tag">GPA X.X</span>
-            <span class="tag">Relevant Coursework</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="timeline-item" data-animate>
-        <div class="timeline-marker">🎓</div>
-        <div class="timeline-content">
-          <div class="timeline-top">
-            <h3>Higher Secondary / High School</h3>
-            <span class="timeline-date">20XX — 20XX</span>
-          </div>
-          <div class="timeline-org">[School Name]</div>
-          <p>Brief note — stream, notable achievement, or score.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ========== Experience highlight ========== -->
-<section id="experience">
-  <div class="container">
-    <div class="highlight-head" data-animate>
-      <div>
-        <span class="section-eyebrow">$ git log --author=tarun -1</span>
-        <h2 class="section-title">Work Experience</h2>
-        <p class="section-sub">Where I've shipped things, most recently.</p>
-      </div>
-      <a href="experience.html" class="view-all">View full experience →</a>
-    </div>
-
-    <div class="timeline">
-
-      <div class="timeline-item" data-animate>
-        <div class="timeline-marker">💼</div>
-        <div class="timeline-content">
-          <div class="timeline-top">
-            <h3>[Job Title]</h3>
-            <span class="timeline-date">[Month 20XX] — Present</span>
-          </div>
-          <div class="timeline-org">[Company Name]</div>
-          <ul>
-            <li>What you built or owned — one line, impact-focused.</li>
-            <li>A second concrete contribution or metric.</li>
-          </ul>
-          <div class="tag-row">
-            <span class="tag">Tech</span>
-            <span class="tag">Stack</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ========== Projects highlight ========== -->
-<section id="projects">
-  <div class="container">
-    <div class="highlight-head" data-animate>
-      <div>
-        <span class="section-eyebrow">$ ls ~/projects | head -3</span>
-        <h2 class="section-title">Projects</h2>
-        <p class="section-sub">A few things I've built, for fun or for keeps.</p>
-      </div>
-      <a href="projects.html" class="view-all">View all projects →</a>
-    </div>
-
     <div class="projects-grid">
 
       <div class="project-card" data-animate>
@@ -228,82 +118,6 @@
         </div>
       </div>
 
-    </div>
-  </div>
-</section>
-
-<!-- ========== Accolades highlight ========== -->
-<section id="accolades">
-  <div class="container">
-    <div class="highlight-head" data-animate>
-      <div>
-        <span class="section-eyebrow">$ cat achievements.txt | head -2</span>
-        <h2 class="section-title">Accolades</h2>
-        <p class="section-sub">A couple of highlights — recognition, awards, certifications.</p>
-      </div>
-      <a href="accolades.html" class="view-all">View all accolades →</a>
-    </div>
-
-    <div class="accolades-grid">
-
-      <div class="accolade-card" data-animate>
-        <div class="accolade-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12"/></svg>
-        </div>
-        <h3>[Award / Recognition]</h3>
-        <div class="accolade-org">[Issuing Body] · 20XX</div>
-        <p>One line on what it was for.</p>
-      </div>
-
-      <div class="accolade-card" data-animate>
-        <div class="accolade-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-        </div>
-        <h3>[Certification]</h3>
-        <div class="accolade-org">[Issuing Body] · 20XX</div>
-        <p>One line on what it covers.</p>
-      </div>
-
-      <div class="accolade-card" data-animate>
-        <div class="accolade-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        </div>
-        <h3>[Hackathon / Competition]</h3>
-        <div class="accolade-org">[Event Name] · 20XX</div>
-        <p>Placement or result, one line.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ========== Side Quest teaser ========== -->
-<section id="sidequest">
-  <div class="container">
-    <span class="section-eyebrow">$ cd ~/side-quests</span>
-    <h2 class="section-title" data-animate>Off the clock</h2>
-    <p class="section-sub" data-animate>The stuff that doesn't fit on a resume.</p>
-
-    <div class="teaser" data-animate>
-      <div class="teaser-text">
-        <h3>Side Quests</h3>
-        <p>Blog posts, half-finished experiments, and things I built purely because they seemed fun. No roadmap required.</p>
-      </div>
-      <a href="sidequest.html" class="btn btn-secondary">Explore side quests →</a>
-    </div>
-  </div>
-</section>
-
-<!-- ========== Contact ========== -->
-<section id="contact" class="contact">
-  <div class="container">
-    <span class="section-eyebrow">$ mail tarun</span>
-    <h2 class="section-title" data-animate>Get in touch</h2>
-    <p class="section-sub" data-animate>Have something to build, or just want to say hi?</p>
-    <div class="contact-links" data-animate>
-      <a href="mailto:you@example.com" class="btn btn-primary">Email Me</a>
-      <a href="https://linkedin.com/in/your-handle" target="_blank" rel="noopener" class="btn btn-secondary">LinkedIn</a>
-      <a href="https://github.com/TarunGuptaJ" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a>
     </div>
   </div>
 </section>

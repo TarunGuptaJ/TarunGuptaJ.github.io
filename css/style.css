@@ -184,10 +184,35 @@ section {
   font-size: 0.875rem;
   font-weight: 500;
   transition: color 0.2s;
+  position: relative;
 }
 
 .nav-links a:hover {
   color: var(--text);
+}
+
+.nav-links a.active {
+  color: var(--text);
+}
+
+.nav-links a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -21px;
+  height: 2px;
+  background: var(--accent);
+}
+
+@media (max-width: 720px) {
+  .nav-links a.active::after {
+    display: none;
+  }
+
+  .nav-links a.active {
+    color: var(--accent);
+  }
 }
 
 .nav-social {
@@ -402,6 +427,179 @@ section {
 
 @keyframes blink {
   50% { opacity: 0; }
+}
+
+/* ========================================
+   Page hero (compact header for subpages)
+   ======================================== */
+
+.page-hero {
+  padding: 3.5rem 0 3rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.page-hero .section-eyebrow {
+  text-align: left;
+  margin-bottom: 0.85rem;
+}
+
+.page-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.75rem;
+}
+
+.page-hero p {
+  color: var(--text-secondary);
+  font-size: 1.0625rem;
+  max-width: 560px;
+}
+
+/* ========================================
+   Homepage highlight sections
+   ======================================== */
+
+.highlight-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.highlight-head .section-title,
+.highlight-head .section-sub {
+  text-align: left;
+  margin: 0;
+}
+
+.highlight-head .section-eyebrow {
+  text-align: left;
+}
+
+.view-all {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  padding: 0.5rem 1.1rem;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.view-all:hover {
+  color: var(--text);
+  border-color: var(--border-light);
+}
+
+/* ========================================
+   Teaser banner (reused for Side Quest + Contact previews)
+   ======================================== */
+
+.teaser {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.teaser-text h3 {
+  font-size: 1.375rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.teaser-text p {
+  color: var(--text-secondary);
+  font-size: 0.9375rem;
+  max-width: 480px;
+}
+
+/* ========================================
+   Side Quest
+   ======================================== */
+
+.sidequest-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.sidequest-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  transition: border-color 0.2s, transform 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidequest-card:hover {
+  border-color: var(--border-light);
+  transform: translateY(-3px);
+}
+
+.sidequest-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.85rem;
+  gap: 0.5rem;
+}
+
+.sq-tag {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border-radius: 100px;
+  padding: 0.25rem 0.7rem;
+  border: 1px solid transparent;
+}
+
+.sq-tag-blog { color: var(--cyan); background: rgba(6, 182, 212, 0.12); border-color: rgba(6, 182, 212, 0.25); }
+.sq-tag-build { color: var(--green); background: rgba(34, 197, 94, 0.12); border-color: rgba(34, 197, 94, 0.25); }
+.sq-tag-experiment { color: var(--purple); background: rgba(168, 85, 247, 0.12); border-color: rgba(168, 85, 247, 0.25); }
+.sq-tag-misc { color: var(--yellow); background: rgba(234, 179, 8, 0.12); border-color: rgba(234, 179, 8, 0.25); }
+
+.sidequest-date {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+
+.sidequest-card h3 {
+  font-size: 1.1875rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.sidequest-card p {
+  color: var(--text-secondary);
+  font-size: 0.9375rem;
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.sidequest-link {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  align-self: flex-start;
 }
 
 /* ========================================
@@ -766,6 +964,16 @@ section {
   .accolades-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .sidequest-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .teaser {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
 }
 
 @media (max-width: 720px) {
@@ -825,5 +1033,14 @@ section {
   .footer-inner {
     flex-direction: column;
     text-align: center;
+  }
+
+  .page-hero h1 {
+    font-size: 2rem;
+  }
+
+  .highlight-head {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

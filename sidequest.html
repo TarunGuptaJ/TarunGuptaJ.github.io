@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Side Quests — Tarun Gupta</title>
+<meta name="description" content="Blog posts, experiments, and side projects by Tarun Gupta — the stuff that doesn't fit on a resume.">
+<meta name="theme-color" content="#09090b">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="sidequest">
+
+<!-- ========== Nav ========== -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">tarun<span class="dot">.</span>dev</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link" data-page="home">Home</a></li>
+      <li><a href="experience.html" class="nav-link" data-page="experience">Experience</a></li>
+      <li><a href="projects.html" class="nav-link" data-page="projects">Projects</a></li>
+      <li><a href="accolades.html" class="nav-link" data-page="accolades">Accolades</a></li>
+      <li><a href="sidequest.html" class="nav-link" data-page="sidequest">Side Quest</a></li>
+      <li><a href="contact.html" class="nav-link" data-page="contact">Contact</a></li>
+      <li class="nav-social"><a href="https://github.com/TarunGuptaJ" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+
+<!-- ========== Page header ========== -->
+<header class="page-hero">
+  <div class="container">
+    <span class="section-eyebrow">$ cd ~/side-quests &amp;&amp; ls</span>
+    <h1 data-animate>Side Quests</h1>
+    <p data-animate>Blog posts, experiments, and things I built purely because they seemed fun. No roadmap, no deadline, no résumé bullet required.</p>
+  </div>
+</header>
+
+<!--
+  HOW TO ADD A NEW ENTRY
+  Copy one .sidequest-card block below and edit it. Pick a tag class that matches the kind of thing it is:
+    sq-tag-blog        — writing / posts
+    sq-tag-build        — a small tool or app you shipped for fun
+    sq-tag-experiment   — a prototype, hack, or "what if" exploration
+    sq-tag-misc         — art, music, talks, anything else
+  Point the link at the post itself (Medium/Substack/Hashnode/your own writeup) or a repo/demo.
+-->
+
+<!-- ========== Side Quests grid ========== -->
+<section id="sidequest-full">
+  <div class="container">
+    <div class="sidequest-grid">
+
+      <div class="sidequest-card" data-animate>
+        <div class="sidequest-top">
+          <span class="sq-tag sq-tag-blog">Blog</span>
+          <span class="sidequest-date">Mon 20XX</span>
+        </div>
+        <h3>[Post Title]</h3>
+        <p>One or two sentences on what the post is about and why you wrote it.</p>
+        <a href="#" target="_blank" rel="noopener" class="sidequest-link">Read post →</a>
+      </div>
+
+      <div class="sidequest-card" data-animate>
+        <div class="sidequest-top">
+          <span class="sq-tag sq-tag-build">Build</span>
+          <span class="sidequest-date">Mon 20XX</span>
+        </div>
+        <h3>[Weekend Project]</h3>
+        <p>A small tool or app you built for fun — what it does and what you learned.</p>
+        <a href="#" target="_blank" rel="noopener" class="sidequest-link">View on GitHub →</a>
+      </div>
+
+      <div class="sidequest-card" data-animate>
+        <div class="sidequest-top">
+          <span class="sq-tag sq-tag-experiment">Experiment</span>
+          <span class="sidequest-date">Mon 20XX</span>
+        </div>
+        <h3>[Random Experiment]</h3>
+        <p>A "what if" you tried out — a hack, a prototype, or a rabbit hole you went down.</p>
+        <a href="#" target="_blank" rel="noopener" class="sidequest-link">See it in action →</a>
+      </div>
+
+      <div class="sidequest-card" data-animate>
+        <div class="sidequest-top">
+          <span class="sq-tag sq-tag-blog">Blog</span>
+          <span class="sidequest-date">Mon 20XX</span>
+        </div>
+        <h3>[Post Title]</h3>
+        <p>One or two sentences on what the post is about and why you wrote it.</p>
+        <a href="#" target="_blank" rel="noopener" class="sidequest-link">Read post →</a>
+      </div>
+
+      <div class="sidequest-card" data-animate>
+        <div class="sidequest-top">
+          <span class="sq-tag sq-tag-misc">Misc</span>
+          <span class="sidequest-date">Mon 20XX</span>
+        </div>
+        <h3>[Something Else Entirely]</h3>
+        <p>Art, music, a talk you gave, or anything that doesn't fit the other buckets.</p>
+        <a href="#" target="_blank" rel="noopener" class="sidequest-link">Check it out →</a>
+      </div>
+
+      <div class="sidequest-card" data-animate>
+        <div class="sidequest-top">
+          <span class="sq-tag sq-tag-build">Build</span>
+          <span class="sidequest-date">Mon 20XX</span>
+        </div>
+        <h3>[Weekend Project]</h3>
+        <p>A small tool or app you built for fun — what it does and what you learned.</p>
+        <a href="#" target="_blank" rel="noopener" class="sidequest-link">View on GitHub →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== Footer ========== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <span class="footer-meta">© <span id="year"></span> Tarun Gupta</span>
+    <div class="footer-links">
+      <a href="experience.html">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="accolades.html">Accolades</a>
+      <a href="sidequest.html">Side Quest</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
