@@ -23,7 +23,7 @@
       <li><a href="experience.html" class="nav-link" data-page="experience">Experience</a></li>
       <li><a href="projects.html" class="nav-link" data-page="projects">Projects</a></li>
       <li><a href="accolades.html" class="nav-link" data-page="accolades">Accolades</a></li>
-      <li><a href="sidequest.html" class="nav-link" data-page="sidequest">Side Quest</a></li>
+      <li><a href="sidequest.html" class="nav-link" data-page="sidequest">Side Quests</a></li>
       <li><a href="contact.html" class="nav-link" data-page="contact">Contact</a></li>
       <li class="nav-social"><a href="https://github.com/TarunGuptaJ" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a></li>
     </ul>
@@ -39,16 +39,11 @@
   <div class="hero-glow"></div>
   <div class="container hero-grid">
     <div class="hero-content" data-animate>
-      <span class="hero-badge">Open to opportunities</span>
       <h1>Hi, I'm Tarun Gupta.<br><span>I build things with code.</span></h1>
       <p class="hero-sub">
         Software engineer focused on [your specialty — e.g. backend systems, ML, full-stack].
         Replace this with a couple of sentences about who you are and what you're working on.
       </p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="/resume.pdf" class="btn btn-secondary">Download Resume</a>
-      </div>
     </div>
     <div class="hero-terminal" data-animate>
       <div class="terminal">
@@ -65,6 +60,79 @@
     </div>
   </div>
 </header>
+
+<!-- ========== Experience highlight ========== -->
+<section id="experience">
+  <div class="container">
+    <div class="highlight-head" data-animate>
+      <div>
+        <span class="section-eyebrow">$ git log --author=tarun -3</span>
+        <h2 class="section-title">Work Experience</h2>
+        <p class="section-sub">Where I've shipped things, most recently.</p>
+      </div>
+      <a href="experience.html" class="view-all">View full experience →</a>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item" data-animate>
+        <div class="timeline-marker">💼</div>
+        <div class="timeline-content">
+          <div class="timeline-top">
+            <h3>[Job Title]</h3>
+            <span class="timeline-date">[Month 20XX] — Present</span>
+          </div>
+          <div class="timeline-org">[Company Name]</div>
+          <ul>
+            <li>What you built or owned — one line, impact-focused.</li>
+            <li>A second concrete contribution or metric.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Tech</span>
+            <span class="tag">Stack</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-animate>
+        <div class="timeline-marker">💼</div>
+        <div class="timeline-content">
+          <div class="timeline-top">
+            <h3>[Previous Job Title]</h3>
+            <span class="timeline-date">[Month 20XX] — [Month 20XX]</span>
+          </div>
+          <div class="timeline-org">[Company / Internship Name]</div>
+          <ul>
+            <li>What you built or owned — one line, impact-focused.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Tech</span>
+            <span class="tag">Stack</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-animate>
+        <div class="timeline-marker">💼</div>
+        <div class="timeline-content">
+          <div class="timeline-top">
+            <h3>[Earlier Job Title]</h3>
+            <span class="timeline-date">[Month 20XX] — [Month 20XX]</span>
+          </div>
+          <div class="timeline-org">[Earlier Company Name]</div>
+          <ul>
+            <li>What you built or owned — one line, impact-focused.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Tech</span>
+            <span class="tag">Stack</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 <!-- ========== Education ========== -->
 <section id="education">
@@ -107,49 +175,12 @@
   </div>
 </section>
 
-<!-- ========== Experience highlight ========== -->
-<section id="experience">
-  <div class="container">
-    <div class="highlight-head" data-animate>
-      <div>
-        <span class="section-eyebrow">$ git log --author=tarun -1</span>
-        <h2 class="section-title">Work Experience</h2>
-        <p class="section-sub">Where I've shipped things, most recently.</p>
-      </div>
-      <a href="experience.html" class="view-all">View full experience →</a>
-    </div>
-
-    <div class="timeline">
-
-      <div class="timeline-item" data-animate>
-        <div class="timeline-marker">💼</div>
-        <div class="timeline-content">
-          <div class="timeline-top">
-            <h3>[Job Title]</h3>
-            <span class="timeline-date">[Month 20XX] — Present</span>
-          </div>
-          <div class="timeline-org">[Company Name]</div>
-          <ul>
-            <li>What you built or owned — one line, impact-focused.</li>
-            <li>A second concrete contribution or metric.</li>
-          </ul>
-          <div class="tag-row">
-            <span class="tag">Tech</span>
-            <span class="tag">Stack</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
 <!-- ========== Projects highlight ========== -->
 <section id="projects">
   <div class="container">
     <div class="highlight-head" data-animate>
       <div>
-        <span class="section-eyebrow">$ ls ~/projects | head -3</span>
+        <span class="section-eyebrow">$ ls ~/projects | head -4</span>
         <h2 class="section-title">Projects</h2>
         <p class="section-sub">A few things I've built, for fun or for keeps.</p>
       </div>
@@ -237,7 +268,7 @@
   <div class="container">
     <div class="highlight-head" data-animate>
       <div>
-        <span class="section-eyebrow">$ cat achievements.txt | head -2</span>
+        <span class="section-eyebrow">$ cat achievements.txt | head -3</span>
         <h2 class="section-title">Accolades</h2>
         <p class="section-sub">A couple of highlights — recognition, awards, certifications.</p>
       </div>
@@ -277,7 +308,7 @@
   </div>
 </section>
 
-<!-- ========== Side Quest teaser ========== -->
+<!-- ========== Side Quests teaser ========== -->
 <section id="sidequest">
   <div class="container">
     <span class="section-eyebrow">$ cd ~/side-quests</span>
@@ -299,7 +330,7 @@
   <div class="container">
     <span class="section-eyebrow">$ mail tarun</span>
     <h2 class="section-title" data-animate>Get in touch</h2>
-    <p class="section-sub" data-animate>Have something to build, or just want to say hi?</p>
+    <p class="section-sub" data-animate>Have an opportunity, something to build, or just want to say hi? I'd love to hear from you.</p>
     <div class="contact-links" data-animate>
       <a href="mailto:you@example.com" class="btn btn-primary">Email Me</a>
       <a href="https://linkedin.com/in/your-handle" target="_blank" rel="noopener" class="btn btn-secondary">LinkedIn</a>
@@ -316,7 +347,7 @@
       <a href="experience.html">Experience</a>
       <a href="projects.html">Projects</a>
       <a href="accolades.html">Accolades</a>
-      <a href="sidequest.html">Side Quest</a>
+      <a href="sidequest.html">Side Quests</a>
       <a href="contact.html">Contact</a>
     </div>
   </div>

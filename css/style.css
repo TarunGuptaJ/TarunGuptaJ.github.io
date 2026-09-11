@@ -81,7 +81,9 @@ code {
 }
 
 section {
-  padding: 6rem 0;
+  position: relative;
+  padding: 7rem 0;
+  box-sizing: border-box;
 }
 
 .section-title {
@@ -258,8 +260,13 @@ section {
 
 .hero {
   position: relative;
-  padding: 10rem 0 5rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6rem 0;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .hero-glow {
@@ -870,6 +877,145 @@ section {
   flex-wrap: wrap;
   margin-top: 2rem;
 }
+
+/* Full contact page — single focal panel */
+#contact-full {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-panel {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  padding: 3.5rem 3rem;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.contact-panel-glow {
+  position: absolute;
+  top: -140px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 520px;
+  height: 320px;
+  background: radial-gradient(ellipse at center, var(--accent-glow) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.contact-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  padding: 0.4rem 0.9rem 0.4rem 0.7rem;
+  margin-bottom: 1.75rem;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.18);
+  flex-shrink: 0;
+}
+
+.contact-panel h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.85rem;
+}
+
+.contact-panel > p {
+  color: var(--text-secondary);
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  max-width: 480px;
+  margin: 0 auto 2.25rem;
+}
+
+.contact-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.btn-lg {
+  font-size: 1rem;
+  padding: 0.9rem 1.75rem;
+}
+
+.contact-social {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.social-icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  transition: border-color 0.2s, color 0.2s, transform 0.2s;
+}
+
+.social-icon-btn:hover {
+  border-color: var(--border-light);
+  color: var(--text);
+  transform: translateY(-2px);
+}
+
+.contact-meta {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.75rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--border);
+}
+
+.contact-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.875rem;
+  color: var(--text-dim);
+}
+
+.contact-meta-item svg {
+  flex-shrink: 0;
+  color: var(--text-dim);
+}
+
+@media (max-width: 640px) {
+  .contact-panel {
+    padding: 2.75rem 1.75rem;
+    border-radius: 1rem;
+  }
+
+  .contact-panel h2 {
+    font-size: 1.625rem;
+  }
+}
+
 
 /* ========================================
    Footer
