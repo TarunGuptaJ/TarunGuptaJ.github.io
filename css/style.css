@@ -303,6 +303,86 @@ section {
   color: var(--text-secondary);
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.hero-swap {
+  display: inline-grid;
+  vertical-align: bottom;
+}
+
+.hero-swap-code,
+.hero-swap-prompts {
+  grid-area: 1 / 1;
+  position: relative;
+  white-space: nowrap;
+}
+
+.hero-swap-code {
+  color: var(--text-secondary);
+  animation: heroSwapCode 4.5s infinite;
+}
+
+.hero-swap-code::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 52%;
+  height: 2px;
+  width: 0%;
+  background: var(--text-dim);
+  animation: heroSwapStrike 4.5s infinite;
+}
+
+.hero-swap-prompts {
+  color: var(--accent);
+  font-weight: 700;
+  opacity: 0;
+  animation: heroSwapPrompts 4.5s infinite;
+}
+
+@keyframes heroSwapCode {
+  0%, 28% { opacity: 1; }
+  38%, 88% { opacity: 0; }
+  98%, 100% { opacity: 1; }
+}
+
+@keyframes heroSwapStrike {
+  0%, 13% { width: 0%; }
+  26%, 100% { width: 100%; }
+}
+
+@keyframes heroSwapPrompts {
+  0%, 33% { opacity: 0; transform: translateY(2px); }
+  43%, 83% { opacity: 1; transform: translateY(0); }
+  93%, 100% { opacity: 0; transform: translateY(2px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-swap-code,
+  .hero-swap-code::after,
+  .hero-swap-prompts {
+    animation: none;
+  }
+
+  .hero-swap-code {
+    opacity: 0;
+  }
+
+  .hero-swap-prompts {
+    opacity: 1;
+  }
+}
+
 .hero-sub {
   font-size: 1.125rem;
   color: var(--text-secondary);
@@ -1141,8 +1221,9 @@ section {
     right: 0;
     background: rgba(9, 9, 11, 0.98);
     backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 0;
     padding: 0;
     max-height: 0;
@@ -1151,15 +1232,27 @@ section {
     border-bottom: 1px solid var(--border);
   }
 
+  .nav-links li {
+    width: 100%;
+  }
+
   .nav-links.open {
     max-height: 400px;
+    overflow-y: auto;
   }
 
   .nav-links a,
-  .nav-social {
-    padding: 1rem 1.5rem;
+  .nav-social a {
+    display: flex;
+    align-items: center;
     width: 100%;
+    padding: 1rem 1.5rem;
     border-bottom: 1px solid var(--border);
+    box-sizing: border-box;
+  }
+
+  .nav-social {
+    width: 100%;
   }
 
   .nav-toggle {
