@@ -13,7 +13,6 @@ projects.html        Full projects grid
 accolades.html        Full awards / certifications / competitions grid
 sidequest.html        Blog posts, experiments, and for-fun side projects
                        (see the HTML comment in this file for how to add entries)
-css/style.css        Design system (dark/terminal theme, adapted from ezstack)
 js/main.js           Nav behavior, active-page/tab highlighting, scroll reveal,
                        back-to-top, terminal typing effect
 img/favicon.svg      Favicon

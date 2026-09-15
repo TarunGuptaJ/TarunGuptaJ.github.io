@@ -23,7 +23,7 @@
       <li><a href="experience.html" class="nav-link" data-page="experience">Experience</a></li>
       <li><a href="projects.html" class="nav-link" data-page="projects">Projects</a></li>
       <li><a href="accolades.html" class="nav-link" data-page="accolades">Accolades</a></li>
-      <li><a href="sidequest.html" class="nav-link" data-page="sidequest">Side Quests</a></li>
+<!--      <li><a href="sidequest.html" class="nav-link" data-page="sidequest">Side Quests</a></li>-->
       <li><a href="contact.html" class="nav-link" data-page="contact">Contact</a></li>
       <li class="nav-social"><a href="https://github.com/TarunGuptaJ" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a></li>
     </ul>
@@ -52,17 +52,31 @@
         <div class="timeline-marker">💼</div>
         <div class="timeline-content">
           <div class="timeline-top">
-            <h3>[Job Title]</h3>
-            <span class="timeline-date">[Month 20XX] — Present</span>
+            <h3>Sr Software Engineer</h3>
+            <span class="timeline-date">July 2024 — Present</span>
           </div>
-          <div class="timeline-org">[Company Name]</div>
+          <div class="timeline-org">Visa Inc</div>
+          <p class="timeline-subrole"><strong>Risk 360</strong></p>
           <ul>
-            <li>What you built or owned — one line, impact-focused.</li>
-            <li>A second concrete contribution or metric.</li>
+            <li>Built and owned backend services for a centralized risk analytics platform serving <strong>100+ global analysts</strong>, unifying data from <strong>12+ risk teams</strong> across fraud, credit, and compliance into a single insights layer, backed by pipelines processing <strong>1–5 TB per run</strong>.</li>
+            <li>Built the platform on a FastAPI backend and React frontend, and introduced the entire caching layer, powering <strong>sub-second UI rendering</strong> for analyst-facing views.</li>
+            <li>Designed a config-driven data validation framework for cross-database migrations, <strong>since adopted as the standard across all projects under the org</strong>; owned release coordination and compliance closure.</li>
+          </ul>
+          <p class="timeline-subrole"><strong>Risk Data Decode</strong></p>
+          <ul>
+            <li>Designed and built a production multi-agentic GenAI system enabling analysts to generate charts, insights, and presentations from raw data via natural language, <strong>cutting manual effort by 1–2 hours per report</strong>.</li>
+            <li>Led the project end-to-end, covering requirements, system design, infrastructure provisioning, and production deployment, while <strong>directing 2 engineers</strong> on execution.</li>
+            <li>Architected an agent feedback loop using LangGraph to handle iterative corrections and <strong>improve output accuracy without manual re-prompting</strong>.</li>
+            <li>Onboarded the Graphify skill and ported it for internal use within Claude Code, <strong>reducing token usage by ~30%</strong> for equivalent tasks.</li>
+            <li>Created reference templates from existing codebases for Claude Code to draw context from, <strong>increasing team throughput and reducing token usage</strong>.</li>
           </ul>
           <div class="tag-row">
-            <span class="tag">Tech</span>
-            <span class="tag">Stack</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">React</span>
+            <span class="tag">Spark</span>
+            <span class="tag">Scala</span>
+            <span class="tag">Airflow</span>
+            <span class="tag">LangGraph</span>
           </div>
         </div>
       </div>
@@ -71,16 +85,19 @@
         <div class="timeline-marker">💼</div>
         <div class="timeline-content">
           <div class="timeline-top">
-            <h3>[Previous Job Title]</h3>
-            <span class="timeline-date">[Month 20XX] — [Month 20XX]</span>
+            <h3>Software Engineer</h3>
+            <span class="timeline-date">June 2022 — June 2024</span>
           </div>
-          <div class="timeline-org">[Company / Internship Name]</div>
+          <div class="timeline-org">Visa Inc</div>
           <ul>
-            <li>What you built or owned — one line, impact-focused.</li>
+            <li>Owned backend services for the Risk Intelligence Systems platform, including a centralized asynchronous cache management system that <strong>cut KRI dashboard response times from 8+ seconds to 1.2 seconds (85% improvement)</strong> across dozens of daily analyst requests.</li>
+            <li>Designed scheduled, asynchronous refresh cycles to <strong>eliminate all user-facing latency</strong> at request time.</li>
+            <li>Built production backend services using Java, Spring Boot, and MySQL.</li>
           </ul>
           <div class="tag-row">
-            <span class="tag">Tech</span>
-            <span class="tag">Stack</span>
+            <span class="tag">Java</span>
+            <span class="tag">Spring Boot</span>
+            <span class="tag">MySQL</span>
           </div>
         </div>
       </div>
@@ -89,16 +106,74 @@
         <div class="timeline-marker">💼</div>
         <div class="timeline-content">
           <div class="timeline-top">
-            <h3>[Earlier Job Title]</h3>
-            <span class="timeline-date">[Month 20XX] — [Month 20XX]</span>
+            <h3>Software Engineer Intern</h3>
+            <span class="timeline-date">May 2021 — July 2021</span>
           </div>
-          <div class="timeline-org">[Earlier Company Name]</div>
+          <div class="timeline-org">Visa Inc</div>
           <ul>
-            <li>What you built or owned — one line, impact-focused.</li>
+            <li>Worked full-stack on the Risk Intelligence Systems platform, implementing a KRI metric <strong>end-to-end from backend API to UI integration</strong>, making it directly accessible to business users.</li>
+            <li>Authored unit and integration tests ensuring production reliability.</li>
           </ul>
           <div class="tag-row">
-            <span class="tag">Tech</span>
-            <span class="tag">Stack</span>
+            <span class="tag">Java</span>
+            <span class="tag">Spring Boot</span>
+            <span class="tag">Angular</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">MySQL</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-animate>
+        <div class="timeline-marker">💼</div>
+        <div class="timeline-content">
+          <div class="timeline-top">
+            <h3>R&D Intern</h3>
+            <span class="timeline-date">November 2020 — January 2021</span>
+          </div>
+          <div class="timeline-org">Needle Innovision Pvt Ltd</div>
+          <ul>
+            <li>Built <strong>proof-of-concept models for a yoga pose analysis system</strong>, and supported ongoing production work alongside the core engineering team.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Computer Vision</span>
+            <span class="tag">Proof of Concept</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-animate>
+        <div class="timeline-marker">💼</div>
+        <div class="timeline-content">
+          <div class="timeline-top">
+            <h3>Project Intern</h3>
+            <span class="timeline-date">June 2020 — September 2020</span>
+          </div>
+          <div class="timeline-org">Center for Cloud Computing and Big Data</div>
+          <ul>
+            <li>Analyzed <strong>large-scale YouTube video data</strong> using Hadoop to uncover patterns and trends in the dataset.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Hadoop</span>
+            <span class="tag">Big Data</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-animate>
+        <div class="timeline-marker">💼</div>
+        <div class="timeline-content">
+          <div class="timeline-top">
+            <h3>Research Intern</h3>
+            <span class="timeline-date">June 2019 — December 2019</span>
+          </div>
+          <div class="timeline-org">Center for Data Science and Machine Learning (CDSAML)</div>
+          <ul>
+            <li>Researched approaches to improving material classification models, with a focus on <strong>fabric sub-classification</strong>.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Research</span>
           </div>
         </div>
       </div>
@@ -115,7 +190,7 @@
       <a href="experience.html">Experience</a>
       <a href="projects.html">Projects</a>
       <a href="accolades.html">Accolades</a>
-      <a href="sidequest.html">Side Quests</a>
+<!--      <a href="sidequest.html">Side Quests</a>-->
       <a href="contact.html">Contact</a>
     </div>
   </div>

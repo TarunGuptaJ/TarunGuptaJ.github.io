@@ -66,9 +66,9 @@ const terminalLines = [
   { prompt: '$', text: 'whoami' },
   { output: 'tarun-gupta' },
   { prompt: '$', text: "cat role.txt" },
-  { output: '[Your Title] — e.g. Software Engineer' },
-  { prompt: '$', text: 'ls skills/' },
-  { output: '[Skill]  [Skill]  [Skill]  [Skill]' },
+  { output: 'Senior Software Engineer @ Visa Inc' },
+  { prompt: '$', text: 'cat education.txt' },
+  { output: 'B.Tech CSE — PES University' },
 ];
 
 let lineIndex = 0;

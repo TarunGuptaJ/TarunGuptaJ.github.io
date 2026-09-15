@@ -1,6 +1,5 @@
 /* ========================================
    Tarun Gupta — Portfolio Styles
-   Design system adapted from ezstack (dark / terminal aesthetic)
    ======================================== */
 
 *,
@@ -18,8 +17,8 @@
   --border: #27272a;
   --border-light: #3f3f46;
   --text: #fafafa;
-  --text-secondary: #a1a1aa;
-  --text-dim: #71717a;
+  --text-secondary: #b8b8c2;
+  --text-dim: #8f8f99;
   --accent: #7c6ef4;
   --accent-2: #c084fc;
   --accent-hover: #6a5cf0;
@@ -778,7 +777,7 @@ section {
 .timeline-date {
   font-family: var(--font-mono);
   font-size: 0.8125rem;
-  color: var(--text-dim);
+  color: var(--text-secondary);
   white-space: nowrap;
 }
 
@@ -787,6 +786,19 @@ section {
   font-size: 0.9375rem;
   font-weight: 500;
   margin-bottom: 0.75rem;
+}
+
+.timeline-subrole {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--text-secondary);
+  margin-top: 1rem;
+}
+
+.timeline-subrole:first-of-type {
+  margin-top: 0;
 }
 
 .timeline-content p {
@@ -800,17 +812,20 @@ section {
 
 .timeline-content ul li {
   color: var(--text-secondary);
-  font-size: 0.9375rem;
-  padding-left: 1rem;
+  font-size: 1rem;
+  padding-left: 1.15rem;
   position: relative;
-  margin-top: 0.35rem;
+  margin-top: 0.6rem;
+  line-height: 1.7;
 }
 
 .timeline-content ul li::before {
-  content: '—';
+  content: '▸';
   position: absolute;
   left: 0;
-  color: var(--text-dim);
+  top: 0.02em;
+  color: var(--accent);
+  font-size: 0.8em;
 }
 
 .tag-row {
@@ -942,7 +957,7 @@ section {
 }
 
 .accolade-org {
-  color: var(--text-dim);
+  color: var(--text-secondary);
   font-family: var(--font-mono);
   font-size: 0.8125rem;
   margin-bottom: 0.6rem;
@@ -1088,12 +1103,12 @@ section {
   align-items: center;
   gap: 0.45rem;
   font-size: 0.875rem;
-  color: var(--text-dim);
+  color: var(--text-secondary);
 }
 
 .contact-meta-item svg {
   flex-shrink: 0;
-  color: var(--text-dim);
+  color: var(--text-secondary);
 }
 
 @media (max-width: 640px) {
